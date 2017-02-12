@@ -37,4 +37,46 @@ O ponto do comando anterior representa todos os arquivos não rastreados
 do diretório atual e também de todos os seus subdiretórios.
 
 
+Quando informamos para o Git que queremos rastrear um arquivo, executando
+git add pela primeira vez, o Git coloca esse arquivo em uma área
+especial do repositório, chamada de stage.
+Uma vez que um arquivo está na área de stage, todas as mudanças nesse
+arquivo passam a ser examinadas.
+
+Se for assim, não poderemos mais utilizar git add ., já que esse
+comando rastreia todos os arquivos.
+Para resolver isso, o Git tem um mecanismo que permite ignorarmos arquivos.
+Basta criarmos umarquivo chamado .gitignore no diretório principal
+do nosso projeto, com os nomes dos arquivos que queremos ignorar.
+
+git log: Uma das opções mais úteis é -p, que mostra o diff introduzido em cada commit. Você pode ainda usar -2, que limita a saída somente às duas últimas entradas.
+se você quiser ver algumas estatísticas abreviadas para cada commit, você pode usar a opção --stat
+
+q sai do git log
+
+Se quiséssemos ignorar todos os arquivos com a extensão .log, por
+exemplo, colocaríamos *.log no .gitignore. Se quiséssemos ignorar
+todos os arquivos .bmp do subdiretório imagens, deveríamos inserir
+imagens/*.bmp.
+
+
+número de verificação de integridade
+de dados (checksum) criado a partir do conteúdo do arquivo
+utilizando a função de hash SHA-1. Por utilizar SHA-1, é representado
+por um número hexadecimal de 40 dígitos.
+
+O termo commit é comumem qualquer sistema controlador de versão
+e significa gravar novos arquivos e alterações em arquivos existentes em
+um repositório. Em português, os termos comitar ou comitado são bem
+corriqueiros, apesar de não existirem nos dicionários.
+
+é possível rastrear as mudanças e comitá-las de uma vez
+com a opção -a
+
+$ git commit -a -m "Inserindo titulo e diminuindo tamanho da
+pagina"
+
+Poderíamos juntar as opções -a e
+-m utilizando -am da seguinte maneira: git commit -am "Inserindo
+titulo..."
 
