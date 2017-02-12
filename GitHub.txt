@@ -28,5 +28,10 @@ para o GitHub e, por consequência, para todo o mundo.
 Para isso, basta executar o comando git push, da seguinte forma:
 $ git push origin master
 
+git clone https://github.com/fulanodasilva/citacoes.git
+
+3.1 Criando um repositório local
+
+
 
 
