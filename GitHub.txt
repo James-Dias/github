@@ -80,3 +80,21 @@ Poderíamos juntar as opções -a e
 -m utilizando -am da seguinte maneira: git commit -am "Inserindo
 titulo..."
 
+Se quisermos um resumo bem conciso dos commits do nosso projeto,
+podemos utilizar a opção --oneline:
+$ git log --oneline
+
+Qual a diferença entre os comandos git status e o git log?
+O git status exibe arquivos que estão fora da área de stage, prontos
+para serem adicionados, e arquivos que estão dentro da área de stage,
+prontos para serem comitados.
+Já o git log exibe o histórico das mudanças efetivamente gravadas
+em um repositório. Ou seja, os commits efetuados.
+
+O comando git diff, quando usado sem parâmetros, mostra a diferença
+entre os arquivos no diretório de trabalho e a área de stage. 
+
+É possível mostrar as diferenças entre os arquivos na área de stage e a
+última versão que foi comitada utilizando a opção --staged:
+$ git diff --staged
+
