@@ -1,0 +1,13 @@
+Github é o serviço web compartilhado para projetos que utilizam o Git para versionamento
+
+$ git config --global user.name "Fulano da Silva"
+$ git config --global user.email fulanodasilva.git@gmail.com
+
+Para transformar o diretório atual em um repositório do Git, basta executar
+o comando git init
+
+Para que o arquivo seja rastreado, devemos executar o seguinte comando:
+git add arquivo.txt
+
+
+
