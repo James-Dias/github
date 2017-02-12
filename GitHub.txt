@@ -9,5 +9,7 @@ o comando git init
 Para que o arquivo seja rastreado, devemos executar o seguinte comando:
 git add arquivo.txt
 
+git status
 
+cd ~/citacoes
 
