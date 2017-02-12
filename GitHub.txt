@@ -13,3 +13,20 @@ git status
 
 cd ~/citacoes
 
+Com a modificação rastreada, podemos gravá-la no repositório, com o
+comando git commit:
+git commit -m "Inserindo nova citacao"
+
+git log
+
+Então, execute o comando git remote, conforme o que segue:
+$ git remote add origin https://github.com/fulanodasilva/
+citacoes.git
+
+enviar nossas mudanças
+para o GitHub e, por consequência, para todo o mundo.
+Para isso, basta executar o comando git push, da seguinte forma:
+$ git push origin master
+
+
+
